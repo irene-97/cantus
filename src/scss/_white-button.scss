@@ -1,0 +1,26 @@
+.button {
+	border-radius: 25px;
+	padding: 4px 44px 0;
+	height: 50px;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 44px;
+	letter-spacing: 1.1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: background 0.1s ease;
+
+	&:hover {
+		background: darken($color-white, 4%);
+	}
+
+	&--white {
+		color: $color-monza;
+		background: $color-white;
+	}
+
+	&--monza {
+		color: $color-white;
+		background: $color-monza;
+	}
+}

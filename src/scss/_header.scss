@@ -1,0 +1,93 @@
+.header {
+	display: flex;
+	height: auto;
+	background: $color-monza;
+
+	&__menu,
+	&__logo,
+	&__socials {
+		flex-grow: 1;
+		width: calc(#{percentage(1 / 3)} - 1px);
+	}
+
+	&__menu {
+		padding: 28px 0;
+		text-align: center;
+
+		&__item {
+			position: relative;
+			margin: 0 18px;
+			padding: 20px 7px;
+			font-weight: bold;
+			font-size: 13px;
+			line-height: 44px;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: $color-white;
+			transition: background 0.3s ease;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 50%;
+				width: 100%;
+				height: 1px;
+				background: rgba($color-white, 0);
+			}
+
+			&:hover {
+				&::before {
+					background: rgba($color-white, 0.5);
+				}
+			}
+		}
+	}
+
+	&__logo {
+		text-align: center;
+
+		&__image {
+			padding: 10px 0;
+		}
+	}
+
+	&__socials {
+		display: flex;
+
+		&__share {
+			padding: 12px 0 12px 44px;
+		}
+
+		.button--white {
+			margin-top: 24px;
+			margin-left: 67px;
+		}
+	}
+
+	.ya-share2__badge {
+		background: none !important;
+	}
+
+	.ya-share2__link {
+		padding: 20px 16px;
+	}
+
+	.ya-share2__container_size_m .ya-share2__icon {
+		width: 34px;
+		height: 34px;
+	}
+
+	.ya-share2__container_size_m .ya-share2__counter {
+		padding: 6px 0;
+		font-size: 16px;
+	}
+
+	.ya-share2__list_direction_horizontal > .ya-share2__item {
+		margin-right: 35px;
+	}
+
+	.ya-share2__counter:before {
+		opacity: 0;
+	}
+}
