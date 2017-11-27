@@ -9,3 +9,10 @@ $('.introducing__slider').slick({
 	slidesToScroll: 3,
 	variableWidth: true,
 });
+
+$('.media__latest__videos').slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	variableWidth: true,
+});
