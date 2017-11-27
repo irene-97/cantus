@@ -1,0 +1,36 @@
+.subscribe {
+	margin-top: 102px;
+	margin-bottom: 70px;
+
+	&__form {
+		position: relative;
+		margin: 0 auto;
+		border-bottom: solid 4px $color-dusty-gray;
+		padding-bottom: 15px;
+		width: 530px;
+
+		input {
+			outline: none;
+			border: none;
+			width: 100%;
+
+			&::placeholder {
+				font-size: 16px;
+				letter-spacing: 3px;
+				text-transform: lowercase;
+				color: $color-black;
+			}
+		}
+
+		button {
+			@include sprite("subscribe-arrow");
+
+			content: "";
+			position: absolute;
+			right: 2px;
+			top: 4px;
+			outline: none;
+			border: none;
+		}
+	}
+}
