@@ -9,6 +9,10 @@ append vars
 	- link.icon16x16 = 'favicon-16x16.png'
 	- link.icon32x32 = 'favicon-32x32.png'
 
+append head-end
+	script(src='//yastatic.net/es5-shims/0.0.2/es5-shims.min.js')
+	script(src='//yastatic.net/share2/share.js')
+
 block content
 	include pug/includes/header
 	include pug/includes/index-banner
