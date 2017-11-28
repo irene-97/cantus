@@ -1,12 +1,14 @@
 .app-banner {
 	margin: 83px 0;
 	padding-top: 69px;
-	height: 354px;
+	padding-bottom: 50px;
+	min-height: 354px;
 	text-align: center;
 	background: url("../images/app-banner.jpg") center no-repeat;
 	background-size: cover;
 
 	&__title {
+		padding: 0 20px;
 		font-family: $font-family-oswald;
 		font-size: 32px;
 		line-height: 48px;
@@ -15,6 +17,7 @@
 	}
 
 	&__text {
+		padding: 0 20px;
 		font-size: 22px;
 		line-height: 30px;
 		letter-spacing: 1px;
@@ -35,11 +38,30 @@
 			&--1 {
 				margin-right: 14px;
 				background: url("../images/app-store.png") center no-repeat;
+
+				@media (max-width: 440px) {
+					margin: 14px auto 0;
+				}
 			}
 
 			&--2 {
 				background: url("../images/google-play.png") center no-repeat;
+
+				@media (max-width: 440px) {
+					margin: 14px auto 0;
+				}
 			}
 		}
+
+		@media (max-width: 440px) {
+			display: block;
+			width: auto;
+		}
+	}
+
+	@media (max-width: 660px) {
+		margin-right: -15px;
+		margin-left: -15px;
+		width: auto;
 	}
 }
