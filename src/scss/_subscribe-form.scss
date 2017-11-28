@@ -33,4 +33,9 @@
 			border: none;
 		}
 	}
+
+	@media (max-width: 700px) {
+		margin-top: 50px;
+		margin-bottom: 60px;
+	}
 }

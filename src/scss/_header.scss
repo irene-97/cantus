@@ -1,6 +1,7 @@
 .header {
 	display: flex;
 	height: auto;
+	text-align: center;
 	background: $color-monza;
 
 	&__menu,
@@ -50,6 +51,14 @@
 				display: inline-block;
 				line-height: 12px;
 			}
+
+			@media (max-width: 560px) {
+				padding: 14px 7px;
+			}
+		}
+
+		@media (max-width: 1730px) {
+			padding: 8px 0;
 		}
 	}
 
@@ -70,6 +79,10 @@
 			@media (max-width: 1870px) {
 				padding: 12px 0 8px;
 			}
+
+			@media (max-width: 590px) {
+				padding: 0;
+			}
 		}
 
 		.button--white {
@@ -78,6 +91,10 @@
 
 			@media (max-width: 1870px) {
 				margin-left: 47px;
+			}
+
+			@media (max-width: 590px) {
+				margin-left: 0;
 			}
 		}
 
