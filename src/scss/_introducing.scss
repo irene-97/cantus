@@ -52,6 +52,16 @@
 				}
 			}
 		}
+
+		@media (max-width: 1230px) {
+			margin: 0 auto;
+			width: 804px;
+		}
+
+		@media (max-width: 900px) {
+			margin: 25px 0;
+			width: auto;
+		}
 	}
 
 	&__slide {
@@ -62,6 +72,7 @@
 
 		&__image {
 			display: inline-block;
+			width: 100%;
 		}
 
 		&__data {
@@ -76,15 +87,34 @@
 				font-size: 22px;
 				line-height: 30px;
 				color: $color-white;
+
+				@media (max-width: 540px) {
+					font-size: 15px;
+					line-height: 15px;
+				}
+
+				@media (max-width: 350px) {
+					font-size: 14px;
+					line-height: 14px;
+				}
 			}
 
 			&__status {
 				color: $color-white;
+
+				@media (max-width: 540px) {
+					font-size: 14px;
+					line-height: 14px;
+				}
+
+				@media (max-width: 350px) {
+					font-size: 13px;
+					line-height: 13px;
+				}
 			}
 
 			&__share {
 				display: none;
-				transition: visibility 0.2s ease;
 			}
 
 			.ya-share2__badge {
@@ -109,15 +139,32 @@
 				margin-right: 0;
 			}
 
-			.ya-share2__counter:before {
+			.ya-share2__counter::before {
 				opacity: 0;
 			}
 
 			&:hover {
 				.introducing__slide__data__share {
 					display: block;
+
+					@media (max-width: 555px) {
+						display: none;
+					}
 				}
 			}
+
+			@media (max-width: 450px) {
+				padding: 12px 11px 15px;
+			}
+		}
+
+		@media (max-width: 900px) {
+			width: calc(50vw - 45px) !important;
+		}
+
+		@media (max-width: 580px) {
+			margin: 15px 5px;
+			width: calc(50vw - 25px) !important;
 		}
 	}
 }

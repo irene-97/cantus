@@ -8,6 +8,15 @@ $('.introducing__slider').slick({
 	slidesToShow: 3,
 	slidesToScroll: 3,
 	variableWidth: true,
+	responsive: [
+		{
+			breakpoint: 1230,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			},
+		},
+	],
 });
 
 $('.media__latest__videos').slick({
