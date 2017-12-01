@@ -25,3 +25,10 @@ $('.media__latest__videos').slick({
 	slidesToScroll: 1,
 	variableWidth: true,
 });
+
+$('.trending__slider').slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	fade: true,
+});
