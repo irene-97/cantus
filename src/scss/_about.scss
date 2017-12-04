@@ -1,0 +1,18 @@
+.about {
+	margin: 80px auto 0;
+	width: 570px;
+
+	&__image {
+		margin: 27px 0;
+
+		img {
+			display: block;
+		}
+	}
+
+	&__text {
+		padding: 11px 0;
+		font-size: 16px;
+		line-height: 31px;
+	}
+}
