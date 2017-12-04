@@ -86,7 +86,12 @@
 			&__name {
 				font-size: 22px;
 				line-height: 30px;
+				text-decoration: none;
 				color: $color-white;
+
+				&:hover {
+					text-decoration: underline;
+				}
 
 				@media (max-width: 540px) {
 					font-size: 15px;
