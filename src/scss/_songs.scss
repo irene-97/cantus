@@ -6,4 +6,9 @@
 		margin-top: 13px;
 		margin-bottom: 134px;
 	}
+
+	@media (max-width: 640px) {
+		padding: 0 10px;
+		width: auto;
+	}
 }
